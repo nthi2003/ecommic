@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gundam</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!--header-->
+    <header class="header w-full" id="header">
+      <nav class="nav container">
+        <a href="./index.html" class="nav__logo">
+          <img
+            src="./assets/img/logo-removebg-preview.png"
+            class="img_logo"
+            alt=""
+          />
+          LYN
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">Featured</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="./blog.html" class="nav__link">Blog</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__shop" id="cart-shop">
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+          <div class="nav__shop" id="cart-shop">
+            <a href="./Login.html" class="nav__shop">
+              <i class="bx bx-user-circle"></i>
+            </a>
+          </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="cart" id="cart">
+      <i class="bx bx-x cart__close" id="cart-close"></i>
+
+      <h2 class="cart__title-center">My Cart</h2>
+
+      <div class="cart__container">
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="assets/img/Calibarn-removebg-preview.png"
+              alt=""
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">BANDAI HG CALIBARN</h3>
+            <span class="cart__price">$60</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="assets/img/RG-32-RX-93-2-NU-AZGUNDAM-510x510.jpg"
+              alt=""
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">RG 32 RX-93 Nu VGundam</h3>
+            <span class="cart__price">$96</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="./assets/img/MG-RX-178-Gundam-Mk-II-Ver.2.0-A.E.U.G-AZGUNDAM-1-removebg-preview (1).png"
+              alt=""
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">MG RX-178 Gundam Mk-II Ver.2.0 A.E.U.G</h3>
+            <span class="cart__price">$87</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cart__prices">
+        <span class="cart__prices-item">3 items</span>
+        <span class="cart__prices-total">$243</span>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__img-bg">
+            <img src="./assets/img/home.png" alt="" class="home__img" />
+          </div>
+          <div class="home__social">
+            <a href="" class="home__social-link"> Facebook </a>
+            <a href="" class="home__social-link"> Twitter </a>
+            <a href="" class="home__social-link"> Instagram </a>
+          </div>
+          <div class="home__data">
+            <h1 class="home__title">
+              NEW GUMDAM <br />
+              XVX-016 GUNDAM AERIAL
+            </h1>
+            <p class="home__description">
+              The XVX-016 Gundam Aerial (ガンダム・エアリアル Gandamu Eariaru?)
+              is a mobile suit introduced in Mobile Suit Gundam the Witch from
+              Mercury. It is the main mobile suit of the 1st Season piloted by
+              the protagonist Suletta Mercury.
+            </p>
+            <span class="home__price">$145</span>
+
+            <div class="home__btns">
+              <a href="" class="button button--gray button--small">
+                Discover
+              </a>
+              <button class="button home__button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div>
+        <div class="swiper mySwipe3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slider_img_sale">
+              <img
+                src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/faa4fe174437409.64a2c37ea4686.jpg"
+              />
+            </div>
+           
+
+      </div>
+
+      <section class="featured section container" id="featured">
+        <h2 class="section__title">Featured</h2>
+        <div class="flex_section">
+          <div></div>
+          <div class="featured__container grid">
+            <article class="featured__card">
+              <span class="featured__tag">Sale</span>
+              <img
+                src="./assets/img/Calibarn-removebg-preview.png"
+                alt=""
+                class="featured__img"
+              />
+              <div class="featured__data">
+                <a href="./card1.html"
+                  ><h3 class="featured__title">HG Gundam Calibarn</h3></a
+                >
+                <span class="featured__price">$60</span>
+              </div>
+              <button class="button featured__button">ADD TO CART</button>
+            </article>
+            <article class="featured__card">
+              <span class="featured__tag">Sale</span>
+              <img
+                src="./assets/img/Calibarn-removebg-preview.png"
+                alt=""
+                class="featured__img"
+              />
+              <div class="featured__data">
+                <a href="./card1.html"
+                  ><h3 class="featured__title">HG Gundam Calibarn</h3></a
+                >
+                <span class="featured__price">$60</span>
+              </div>
+              <button class="button featured__button">ADD TO CART</button>
+            </article>
+            <article class="featured__card">
+              <span class="featured__tag">Sale</span>
+              <img
+                src="./assets/img/Calibarn-removebg-preview.png"
+                alt=""
+                class="featured__img"
+              />
+              <div class="featured__data">
+                <a href="./card1.html"
+                  ><h3 class="featured__title">HG Gundam Calibarn</h3></a
+                >
+                <span class="featured__price">$60</span>
+              </div>
+              <button class="button featured__button">ADD TO CART</button>
+            </article>
+            <article class="featured__card">
+              <span class="featured__tag">Sale</span>
+              <img
+                src="./assets/img/Calibarn-removebg-preview.png"
+                alt=""
+                class="featured__img"
+              />
+              <div class="featured__data">
+                <a href="./card1.html"
+                  ><h3 class="featured__title">HG Gundam Calibarn</h3></a
+                >
+                <span class="featured__price">$60</span>
+              </div>
+              <button class="button featured__button">ADD TO CART</button>
+            </article>
+            <article class="featured__card">
+              <span class="featured__tag">Sale</span>
+              <img
+                src="./assets/img/Calibarn-removebg-preview.png"
+                alt=""
+                class="featured__img"
+              />
+              <div class="featured__data">
+                <a href="./card1.html"
+                  ><h3 class="featured__title">HG Gundam Calibarn</h3></a
+                >
+                <span class="featured__price">$60</span>
+              </div>
+              <button class="button featured__button">ADD TO CART</button>
+            </article>
+            <article class="featured__card">
+              <span class="featured__tag">Sale</span>
+              <img
+                src="./assets/img/Calibarn-removebg-preview.png"
+                alt=""
+                class="featured__img"
+              />
+              <div class="featured__data">
+                <a href="./card1.html"
+                  ><h3 class="featured__title">HG Gundam Calibarn</h3></a
+                >
+                <span class="featured__price">$60</span>
+              </div>
+              <button class="button featured__button">ADD TO CART</button>
+            </article>
+            <article class="featured__card">
+              <span class="featured__tag">Sale</span>
+              <img
+                src="./assets/img/RG-35-GOD-GUNDAM-AZGUNDAM-12-removebg-preview.png"
+                alt=""
+                class="featured__img"
+              />
+              <div class="featured__data">
+                <a href="./card1.html">
+                  <h3 class="featured__title">RG 37 God Gundam</h3>
+                </a>
+                <span class="featured__price">$80</span>
+              </div>
+              <button class="button featured__button">ADD TO CART</button>
+            </article>
+            <article class="featured__card">
+              <span class="featured__tag">Sale</span>
+              <img
+                src="./assets/img/RG-32-RX-93-2-NU-AZGUNDAM-510x510-removebg-preview.png"
+                alt=""
+                class="featured__img"
+              />
+              <div class="featured__data">
+                <a href="./card1.html"
+                  ><h3 class="featured__title">RG 32 RX-93 Nu VGundam</h3></a
+                >
+                <span class="featured__price">$96</span>
+              </div>
+              <button class="button featured__button">ADD TO CART</button>
+            </article>
+            <article class="featured__card">
+              <span class="featured__tag">Sale</span>
+              <img
+                src="./assets/img/MG-RX-178-Gundam-Mk-II-Ver.2.0-A.E.U.G-AZGUNDAM-1-removebg-preview (1).png"
+                alt=""
+                class="featured__img"
+              />
+              <div class="featured__data">
+                <a href="./card1.html">
+                  <h3 class="featured__title">
+                    MG RX-178 Gundam Mk-II Ver.2.0 A.E.U.G
+                  </h3>
+                </a>
+                <span class="featured__price">$87</span>
+              </div>
+              <button class="button featured__button">ADD TO CART</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story section container">
+        <div class="story__container grid">
+          <div class="story__data">
+            <h2 class="section__title story__section-title">Our Story</h2>
+            <h1 class="story__title">
+              The most popular standard Gundam of the year.
+            </h1>
+            <p class="story__description">
+              It all began in 1979 when Mobile Suit Gundam made its first
+              appearance on the screen, opening up a world full of excitement
+              and challenges. Since then, we have witnessed the remarkable
+              evolution of Gundam through multiple generations, each carrying
+              the dreams and lofty spirits of creators and fans alike.
+            </p>
+            <a href="" class="button button--small">Discover</a>
+          </div>
+          <div class="story__images">
+            <img src="assets/img/storynew.jpg" alt="" class="story__img" />
+            <div class="story__square"></div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="slider_container products section container"
+        id="products"
+      >
+        <h2 class="section__title">Products</h2>
+        <p class="section__list">Gumdam</p>
+        <div class="container">
+          <div class="swiper card_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="products__card">
+                  <img
+                    src="./assets/img/MG-RX-178-Gundam-Mk-II-Ver.2.0-A.E.U.G-AZGUNDAM-1.jpg"
+                    class="products__img"
+                    alt=""
+                  />
+                  <h3 class="products__title">Spirit rose</h3>
+                  <span class="products__price">$1500</span>
+                  <button class="products__button">
+                    <i class="bx bx-shopping-bag"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__card">
+                  <img
+                    src="./assets/img/MG-RX-178-Gundam-Mk-II-Ver.2.0-A.E.U.G-AZGUNDAM-1.jpg"
+                    class="products__img"
+                    alt=""
+                  />
+                  <h3 class="products__title">Spirit rose</h3>
+                  <span class="products__price">$1500</span>
+                  <button class="products__button">
+                    <i class="bx bx-shopping-bag"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__card">
+                  <img
+                    src="./assets/img/MG-RX-178-Gundam-Mk-II-Ver.2.0-A.E.U.G-AZGUNDAM-1.jpg"
+                    class="products__img"
+                    alt=""
+                  />
+                  <h3 class="products__title">Spirit rose</h3>
+                  <span class="products__price">$1500</span>
+                  <button class="products__button">
+                    <i class="bx bx-shopping-bag"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__card">
+                  <img
+                    src="./assets/img/MG-RX-178-Gundam-Mk-II-Ver.2.0-A.E.U.G-AZGUNDAM-1.jpg"
+                    class="products__img"
+                    alt=""
+                  />
+                  <h3 class="products__title">Spirit rose</h3>
+                  <span class="products__price">$1500</span>
+                  <button class="products__button">
+                    <i class="bx bx-shopping-bag"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__card">
+                  <img
+                    src="./assets/img/MG-RX-178-Gundam-Mk-II-Ver.2.0-A.E.U.G-AZGUNDAM-1.jpg"
+                    class="products__img"
+                    alt=""
+                  />
+                  <h3 class="products__title">Spirit rose</h3>
+                  <span class="products__price">$1500</span>
+                  <button class="products__button">
+                    <i class="bx bx-shopping-bag"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="products__card">
+                  <img
+                    src="./assets/img/MG-RX-178-Gundam-Mk-II-Ver.2.0-A.E.U.G-AZGUNDAM-1.jpg"
+                    class="products__img"
+                    alt=""
+                  />
+                  <h3 class="products__title">Spirit rose</h3>
+                  <span class="products__price">$1500</span>
+                  <button class="products__button">
+                    <i class="bx bx-shopping-bag"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial section container">
+        <div class="testimonial__container grid">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                  They are the best watches that one acquires, also they are
+                  always with the latest news and trends, with a very
+                  comfortable price and especially with the attention you
+                  receive, they are always attentive to your questions.
+                </p>
+                <h3 class="testimonial__date">March 27. 2021</h3>
+
+                <div class="testimonial__perfil">
+                  <img
+                    src="assets/img/testimonial1.jpg"
+                    alt=""
+                    class="testimonial__perfil-img"
+                  />
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name">Lee Doe</span>
+                    <span class="testimonial__perfil-detail"
+                      >Director of a company</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                  They are the best watches that one acquires, also they are
+                  always with the latest news and trends, with a very
+                  comfortable price and especially with the attention you
+                  receive, they are always attentive to your questions.
+                </p>
+                <h3 class="testimonial__date">March 27. 2021</h3>
+
+                <div class="testimonial__perfil">
+                  <img
+                    src="assets/img/testimonial2.jpg"
+                    alt=""
+                    class="testimonial__perfil-img"
+                  />
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name">Samantha Mey</span>
+                    <span class="testimonial__perfil-detail"
+                      >Director of a company</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                  They are the best watches that one acquires, also they are
+                  always with the latest news and trends, with a very
+                  comfortable price and especially with the attention you
+                  receive, they are always attentive to your questions.
+                </p>
+                <h3 class="testimonial__date">March 27. 2021</h3>
+
+                <div class="testimonial__perfil">
+                  <img
+                    src="assets/img/testimonial3.jpg"
+                    alt=""
+                    class="testimonial__perfil-img"
+                  />
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name">Raul Zaman</span>
+                    <span class="testimonial__perfil-detail"
+                      >Director of a company</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-left-arrow-alt"></i>
+            </div>
+          </div>
+
+          <div class="testimonial__images">
+            <div class="testimonial__square"></div>
+            <img
+              src="./assets/img/MG-RX-178-Gundam-Mk-II-Ver.2.0-A.E.U.G-AZGUNDAM-1.jpg"
+              alt=""
+              class="testimonial__img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="newsletter section container">
+        <div class="newsletter__bg grid">
+          <div>
+            <h2 class="newsletter__title">
+              Subscribe Our <br />
+              Newsletter
+            </h2>
+            <p class="newsletter__description">
+              Don't miss out on your discounts. Subscribe to our email
+              newsletter to get the best offers, discounts, coupons, gifts and
+              much more.
+            </p>
+          </div>
+
+          <form action="" class="newsletter__subscribe">
+            <input
+              type="email"
+              placeholder="quocthi.dev@gmail.com"
+              class="newsletter__input"
+            />
+            <button class="button">SUBSCRIBE</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <h3 class="footer__title">Our information</h3>
+
+          <ul class="footer__list">
+            <li>Viet Nam</li>
+            <li>University of Science and Education</li>
+            <li>123-456-789</li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">About Us</h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Support Center</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Customer Support</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Copy Right</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Product</h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Road bikes</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Mountain bikes</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Electric</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Accesories</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Social</h3>
+
+          <ul class="footer__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-facebook"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-instagram"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <span class="footer__copy">&#169; QuocThi. All rigths reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+  </body>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</html>

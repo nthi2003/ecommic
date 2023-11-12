@@ -1,0 +1,37 @@
+
+
+
+.text_right{
+    padding: 30px 10px;
+}
+.text_blog{
+    padding: 10px 10px;
+}
+.name_blog{
+    padding: 10px 0px;
+}
+@media screen and (max-width: 375px){
+    .flex_blog{
+
+    }
+    .hr_blog{
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .flex_blog{
+        display: flex;
+    }
+    .img_blog{
+    
+        height: 300px;
+    }
+    .flex_left{
+        width: 40%;
+        padding: 20px 20px;
+    }
+    .flex_right{
+ 
+        width: 100%;
+    }
+}
