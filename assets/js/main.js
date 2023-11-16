@@ -145,7 +145,7 @@ const cart = document.getElementById('cart'),
       cartClose = document.getElementById('cart-close')
 
 /*===== CART SHOW =====*/
-/* Validate if constant exists */
+/* Validate if constant exists */   
 if(cartShop){
     cartShop.addEventListener('click', () =>{
         cart.classList.add('show-cart')
@@ -191,3 +191,9 @@ themeButton.addEventListener('click', () => {
 })
 
 
+var swiper = new Swiper(".mySwiperSale", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
