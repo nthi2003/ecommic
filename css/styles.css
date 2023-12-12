@@ -206,8 +206,6 @@ body.dark-theme {
   text-align: center;
 }
 .input100 {
-  list-style: none;
-  border: none;
   outline: none;
   line-height: 1.2;
   font-size: 18px;
@@ -217,11 +215,42 @@ body.dark-theme {
   width: 320px;
   
 }
+.message{
+  position: sticky;
+  top:0;
+  max-width: 1200px;
+  margin:0 auto;
+  background-color: #fff;
+  padding:2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:1.5rem;
+  z-index: 1100;
+
+}
+
+.message span{
+  font-size: 2rem;
+  color:var(--black);
+}
+
+.message i{
+  cursor: pointer;
+  color:var(--red);
+  font-size: 2.5rem;
+}
+
+.message i:hover{
+  color:var(--black);
+}
+
 .rating {
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
+
 .rating .stars {
   width: 80px;
   height: 20px;
@@ -1320,6 +1349,9 @@ body.dark-theme {
 
 }
 @media screen and (min-width: 1024px) {
+  .mg_box{
+    margin-left: 350px;
+  }
 .text_sigups{
   display: flex;
   margin-left: 220px;
